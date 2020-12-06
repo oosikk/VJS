@@ -8,7 +8,7 @@ function handleImgLoad(){
 
 function paintImage(imgNumber){
     const image = new Image();
-    image.src = `${imgNumber + 1}.jpg`;
+    image.src = `images/${imgNumber + 1}.jpg`;
     image.classList.add("bgImage"); // 새로운 class Name을 가지게 됨, css파일에서 .bgImage{...}로 활용
     body.prepend(image);
     // image.addEventListener("loadend", handleImgLoad);
